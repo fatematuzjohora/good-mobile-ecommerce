@@ -5,13 +5,17 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* <!---------- 🚩 SPINNER 💭 -----------> */
+body{
+  
+}
+
+/* <!---------- spinner-----------> */
 #spinner {
   display: grid;
   place-items: center;
 }
 
-/* <!---------- 🚩 JS ANCHOR TEXT 💭 -----------> */
+/* <!---------- js anchor text -----------> */
 a {
   text-decoration: none;
 }
