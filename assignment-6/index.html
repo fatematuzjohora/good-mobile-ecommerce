@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Good Mobile E-commerce</title>
+	<!-- ▓▒▒▒▒▒▒▒▒▒▒▒ FAVICON LINK ▒▒▒▒▒▒▒▒▒▒▒▓ -->
+	<link rel="shortcut icon" href="fav/fav.png" type="image/x-icon">
+	<!-- ▓▒▒▒▒▒▒▒▒▒▒▒ FAVICON LINK END ▒▒▒▒▒▒▒▒▒▒▒▓ -->
+
+	<!-- ▓▒▒▒▒▒▒▒▒▒▒▒ STYLE SHEET ▒▒▒▒▒▒▒▒▒▒▒▓ -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<!-- ▓▒▒▒▒▒▒▒▒▒▒▒  STYLE SHEET  ▒▒▒▒▒▒▒▒▒▒▒▓ -->
+
+</head>
+
+<!------------------------------------ 🚩 BACKGROUND IMAGE START 💭 -------------------------------->
+<body >
+	
+</body>
+<body class="background">
+	<!-- ▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  MAIN SECTION START   ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓ -->
+	<main>
+		<!-- ▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  HEADER SECTION START  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓ -->
+		<header>
+			<!-- -------------------------------- 🚩 NAV SECTION START 💭 -------------------------------------->
+			<nav class="navbar navbar-expand-lg navbar-light mx-5">
+				<div>
+					<a href="">
+						<img class="img-fluid ps-5 ms-2" width="140px" src="fav/fav.png" alt="">
+					</a>
+				</div>
+				<h1 class="text-black fs-2 fw-bold mt-1 ms-4">Good Mobile <br> Ecommerce</h1>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse mx-4" id="navbarSupportedContent">
+					<ul class="navbar-nav  mb-lg-0">
+						<li class="nav-item ps-5">
+							<a class="fs-5 nav-link text-black active " aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item ps-3">
+							<a class="fs-5 nav-link text-black active" aria-current="page" href="#">All Products</a>
+						</li>
+						<li class="nav-item ps-3">
+							<a class="fs-5 nav-link text-black active" aria-current="page" href="#">Repair</a>
+						</li>
+						<li class="nav-item ps-3">
+							<a class="fs-5 nav-link text-black active" aria-current="page" href="#">Customer Care</a>
+						</li>
+						<li class="nav-item ps-3">
+							<a class="fs-5 nav-link text-black active" aria-current="page" href="#"> Contact</a>
+						</li>
+					</ul>
+					<form class="d-flex m-5">
+						<button type="button" class="btn btn-white text-drak btn-success py-2 px-4 m-2 ">Login</button>
+						<button type="button"
+							class="btn btn-white text-white btn-success py-2 px-4 m-2">Register</button>
+					</form>
+				</div>
+			</nav>
+			<!----------------------------------- 🚩 NAV SECTION END 💭 --------------------------------->
+		</header>
+		<!-- ▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  HEADER SECTION END   ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓ -->
+
+		<div class="search_box input-box">
+			<!----------------------------------- 🚩 SEARCH BOX START 💭 -------------------------------->
+			<div>
+				<input id="search-field" type="text" class="text-center" placeholder="Search Your Phone Name Here...">
+				<i onclick="searchPhone()" class="fas fa-search"></i>
+
+				<h5 id="search-result-output" class="text-center p-2 w-50 mx-auto"></h5>
+			</div>
+		</div>
+		<section class="d-flex justify-content-center">
+			<div id="spinner" class="spinner-border d-none" role="status">
+				<span class="visually-hidden pt-5 mt-5">Loading...</span>
+			</div>
+		</section>
+		<!------------------------------------ 🚩 SEARCH BOX END 💭 ---------------------------------->
+		<div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 w-75 mx-auto"></div>
+
+
+		<!-------------------------------- 🚩 BACKGROUND IMAGE END 💭 ---------------------------------->
+	</main>
+	<!-- ▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  MAIN SECTION END  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓ -->
+
+	
+	<!-- ▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ JAVASCRIPT SHEET ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓ -->
+	<script src="js/app.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
